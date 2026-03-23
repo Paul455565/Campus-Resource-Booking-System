@@ -25,3 +25,12 @@ The Campus Resource Booking System is a web-based application that enables unive
 
 **Repository:** [(https://github.com/Paul455565/Campus-Resource-Booking-System)]  
 **Keywords:** university, booking, C4, software-architecture, education
+
+## Assignment 4: Requirements Documentation
+**Completed Deliverables:**
+- [Stakeholder Analysis Table](STAKEHOLDER_ANALYSIS.md) - 7 stakeholders with detailed concerns.
+- [System Requirements Document (SRD)](SYSTEM_REQUIREMENTS.md) - 12 FR + 10 NFR, traceable to stakeholders.
+- [Reflection](REFLECTION.md) - Challenges and trade-offs analysis.
+
+**Updated project now includes full Assignment 4 requirements atop Assignment 3 architecture.**
+
