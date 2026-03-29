@@ -34,3 +34,10 @@ The Campus Resource Booking System is a web-based application that enables unive
 
 **Updated project now includes full Assignment 4 requirements atop Assignment 3 architecture.**
 
+## Assignment 5: Use Case Modeling and Test Case Development
+**Completed Deliverables:**
+- [Use Case Diagram](USE_CASE_DIAGRAM.md) - Mermaid diagram with 7 actors and 12 use cases, including relationships and explanations.
+- [Use Case Specifications](USE_CASE_SPECIFICATIONS.md) - Detailed specs for 8 critical use cases.
+- [Test Cases](TEST_CASES.md) - 8 functional and 2 non-functional test cases in table format.
+- [Reflection](REFLECTION.md) - Updated with challenges in translating requirements to use cases/tests (498 words).
+
