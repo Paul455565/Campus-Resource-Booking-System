@@ -41,3 +41,8 @@ The Campus Resource Booking System is a web-based application that enables unive
 - [Test Cases](TEST_CASES.md) - 8 functional and 2 non-functional test cases in table format.
 - [Reflection](REFLECTION.md) - Updated with challenges in translating requirements to use cases/tests (498 words).
 
+## Assignment 6: Agile User Stories, Backlog, and Sprint Planning
+**Completed Deliverables:**
+- [Agile Planning Document](AGILE_PLANNING.md) - User stories table, product backlog, sprint plan with goal and tasks.
+- [Reflection](REFLECTION.md) - Updated with challenges in prioritization, estimation, and Agile alignment (512 words).
+

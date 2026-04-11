@@ -70,3 +70,31 @@ Translating the detailed requirements from Assignment 4 into use case diagrams, 
 
 This assignment deepened understanding of UML/test-driven development in requirements engineering. Challenges like abstraction underscored the importance of user-centric modeling, preparing the system for implementation. Future iterations could integrate automated testing tools. Word count: 498.
 
+## Assignment 6: Challenges in Prioritization, Estimation, and Aligning Agile with Stakeholder Needs
+
+As the sole stakeholder, product owner, and developer for this project, applying Agile methodology introduced internal resistance and self-imposed challenges in translating requirements into user stories, backlog, and sprint planning. Balancing my dual roles—advocating for user needs while estimating technical feasibility—highlighted the tension between idealism and practicality in solo development.
+
+### 1. Internal Resistance in User Story Creation
+- **Issue:** Crafting user stories from FRs and use cases felt redundant, as I questioned if INVEST criteria added value beyond my existing knowledge. Resistance stemmed from the effort to rephrase technical specs into narrative form, fearing it diluted precision.
+- **Challenge:** Ensuring stories were small and testable without over-splitting (e.g., combining login with profile view tempted me, but I resisted for independence). As the only stakeholder, I lacked external validation, leading to second-guessing (e.g., "Is this benefit real for users?").
+- **Resolution:** Forced adherence to "As a [role]..." format clarified perspectives, reducing my bias. Lesson: Stories bridged requirements to empathy, even solo.
+
+### 2. Prioritization Conflicts and MoSCoW Trade-offs
+- **Issue:** Prioritizing with MoSCoW felt subjective; my developer side pushed technical must-haves (e.g., security encryption) over user-centric ones (e.g., notifications), creating internal conflict.
+- **Challenge:** Justifying "won’t-have" for audit logs was hard, as I valued completeness but had to defer for MVP. Resistance: Wanting all features now, but Agile forced focus.
+- **Resolution:** Aligned with stakeholder metrics from Assignment 4 (e.g., booking success rate), overriding personal preferences. This simulated team negotiation, building discipline.
+
+### 3. Estimation Difficulties and Effort Realism
+- **Issue:** Story points (1-5) were arbitrary without team calibration; my optimism underestimated complexity (e.g., booking validation at 5 points felt low, but I stuck to it).
+- **Challenge:** Dependencies (e.g., login before browsing) were clear, but hidden tasks (e.g., UI polish) emerged, causing frustration. As solo, no one to challenge estimates, leading to overconfidence.
+- **Resolution:** Used Fibonacci for relativity; reviewed against past efforts. Sprint planning capped at 20 points to avoid burnout, acknowledging my limits.
+
+### 4. Sprint Planning and MVP Alignment
+- **Issue:** Selecting 6 stories for MVP felt ambitious; internal resistance delayed decisions, as I debated including "nice-to-haves" like reports.
+- **Challenge:** Breaking stories into tasks required switching hats—PO for goals, dev for technicals. Aligning with stakeholder needs (e.g., admin efficiency) was straightforward but lacked diversity.
+- **Resolution:** Focused on end-to-end workflow; goal statement reinforced value. This process exposed solo Agile's isolation—future projects need retrospectives for self-improvement.
+
+### 5. Overall Alignment and Future Insights
+- **Challenge:** Agile's iterative nature clashed with my linear thinking from prior assignments; resistance to "embrace change" was strong, but it improved adaptability.
+- **Lesson:** As solo stakeholder, internal dialogues simulated collaboration, revealing prioritization's subjectivity. Challenges built resilience, preparing for real teams. Word count: 512.
+
