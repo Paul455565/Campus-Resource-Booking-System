@@ -1,48 +1,9 @@
 # Campus Resource Booking System
 
-**PAULOSE MAJA**  
-**March 10, 2026**  
-**Software Engineering Assignment 3**
+## Assignments
 
-## Project Description
-The Campus Resource Booking System is a web-based application that enables university students to book essential campus resources such as study rooms, projectors, and lab computers. Administrators review and approve/reject requests, with automated notifications sent to students. 
-
-**Key Features (When Complete):**
-- Student authentication and resource browsing
-- Booking request submission with calendar availability
-- Admin approval workflow
-- Real-time notifications (email)
-- Responsive UI for mobile/desktop
-
-**Tech Stack:** React (Frontend), Node.js/Express (Backend), PostgreSQL (DB), Mermaid for diagrams.
-
-## Documentation
-- [System Specification](SPECIFICATION.md)
-- [Architecture (C4 Diagrams)](ARCHITECTURE.md)
-
-## Demo
-![Booking Flow Demo](demo.gif) *(Future prototype)*
-
-**Repository:** [(https://github.com/Paul455565/Campus-Resource-Booking-System)]  
-**Keywords:** university, booking, C4, software-architecture, education
-
-## Assignment 4: Requirements Documentation
-**Completed Deliverables:**
-- [Stakeholder Analysis Table](STAKEHOLDER_ANALYSIS.md) - 7 stakeholders with detailed concerns.
-- [System Requirements Document (SRD)](SYSTEM_REQUIREMENTS.md) - 12 FR + 10 NFR, traceable to stakeholders.
-- [Reflection](REFLECTION.md) - Challenges and trade-offs analysis.
-
-**Updated project now includes full Assignment 4 requirements atop Assignment 3 architecture.**
-
-## Assignment 5: Use Case Modeling and Test Case Development
-**Completed Deliverables:**
-- [Use Case Diagram](USE_CASE_DIAGRAM.md) - Mermaid diagram with 7 actors and 12 use cases, including relationships and explanations.
-- [Use Case Specifications](USE_CASE_SPECIFICATIONS.md) - Detailed specs for 8 critical use cases.
-- [Test Cases](TEST_CASES.md) - 8 functional and 2 non-functional test cases in table format.
-- [Reflection](REFLECTION.md) - Updated with challenges in translating requirements to use cases/tests (498 words).
-
-## Assignment 6: Agile User Stories, Backlog, and Sprint Planning
-**Completed Deliverables:**
-- [Agile Planning Document](AGILE_PLANNING.md) - User stories table, product backlog, sprint plan with goal and tasks.
-- [Reflection](REFLECTION.md) - Updated with challenges in prioritization, estimation, and Agile alignment (512 words).
+- [Ass7: Kanban](./template_analysis.md), [Explanation](./kanban_explanation.md), [Reflection](./reflection.md)
+- [Ass8: State Diagrams](./state_diagrams.md)
+- [Ass8: Activity Diagrams](./activity_diagrams.md)
+- [Modeling Reflection](./modeling_reflection.md)
 
