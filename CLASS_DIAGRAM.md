@@ -308,6 +308,52 @@ classDiagram
         +changePassword(userId, oldPassword, newPassword): void
     }
 
+    class Repository {
+        <<interface>>
+        +save(entity: T): T
+        +findById(id: ID): Optional<T>
+        +findAll(): List<T>
+        +deleteById(id: ID): void
+        +existsById(id: ID): boolean
+    }
+
+    class BookingRepository {
+        <<interface>>
+        +findByUserId(userId): Booking[]
+        +findByResourceId(resourceId): Booking[]
+        +findByBookingId(bookingId): Booking
+    }
+
+    class ResourceRepository {
+        <<interface>>
+        +findByResourceId(resourceId): Resource
+        +findByAvailability(status): Resource[]
+    }
+
+    class InMemoryBookingRepository {
+        +save(booking): Booking
+        +findById(id): Optional<Booking>
+        +findByUserId(userId): Booking[]
+        +findByResourceId(resourceId): Booking[]
+    }
+
+    class InMemoryResourceRepository {
+        +save(resource): Resource
+        +findById(id): Optional<Resource>
+        +findByAvailability(status): Resource[]
+    }
+
+    class DatabaseBookingRepository {
+        <<stub>>
+        +save(booking): Booking
+        +findById(id): Optional<Booking>
+    }
+
+    class RepositoryFactory {
+        +getBookingRepository(storageType): BookingRepository
+        +getResourceRepository(storageType): ResourceRepository
+    }
+
     %% Relationships
 
     %% User relationships
@@ -336,6 +382,10 @@ classDiagram
     MaintenanceService -- Maintenance : manages
     MaintenanceService -- Booking : affects
     AuthenticationService -- User : manages
+    BookingService -- BookingRepository : uses
+    ResourceService -- ResourceRepository : uses
+    BookingService -- RepositoryFactory : configuredBy
+    ResourceService -- RepositoryFactory : configuredBy
 ```
 
 ---

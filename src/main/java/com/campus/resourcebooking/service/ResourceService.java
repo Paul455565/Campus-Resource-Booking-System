@@ -1,34 +1,31 @@
 package com.campus.resourcebooking.service;
 
-import com.campus.resourcebooking.model.Resource;
-import com.campus.resourcebooking.enums.ResourceType;
 import com.campus.resourcebooking.enums.ResourceAvailability;
+import com.campus.resourcebooking.model.Resource;
+import com.campus.resourcebooking.repositories.ResourceRepository;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Service class for managing resources
  */
 public class ResourceService {
-    private final Object resourceRepository; // Would be a proper repository interface
+    private final ResourceRepository resourceRepository;
     private final MaintenanceService maintenanceService;
 
-    public ResourceService(MaintenanceService maintenanceService) {
-        this.resourceRepository = null;
+    public ResourceService(ResourceRepository resourceRepository, MaintenanceService maintenanceService) {
+        this.resourceRepository = resourceRepository;
         this.maintenanceService = maintenanceService;
     }
 
     public List<Resource> getAvailableResources(LocalDateTime date, LocalDateTime time) {
-        // Implementation would query repository for available resources
-        return List.of(
-            new Resource("Conference Room A", "Large conference room", ResourceType.ROOM, "Building 1", 20),
-            new Resource("Projector 1", "HD Projector", ResourceType.PROJECTOR, "Building 2", 1)
-        );
+        return resourceRepository.findByAvailability(ResourceAvailability.AVAILABLE);
     }
 
     public Resource getResourceById(String resourceId) {
-        // Implementation would query repository
-        return new Resource("Conference Room A", "Large conference room", ResourceType.ROOM, "Building 1", 20);
+        Optional<Resource> resource = resourceRepository.findByResourceId(resourceId);
+        return resource.orElseThrow(() -> new IllegalArgumentException("Resource not found: " + resourceId));
     }
 
     public boolean checkResourceAvailability(String resourceId, LocalDateTime startDate, LocalDateTime endDate) {
@@ -39,6 +36,7 @@ public class ResourceService {
     public void updateResourceAvailability(String resourceId, ResourceAvailability status) {
         Resource resource = getResourceById(resourceId);
         resource.updateAvailability(status);
+        resourceRepository.save(resource);
     }
 
     public Object getResourceUtilization(String resourceId, Object period) {
