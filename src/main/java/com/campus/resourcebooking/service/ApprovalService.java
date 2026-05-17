@@ -51,4 +51,12 @@ public class ApprovalService {
         // Implementation would query repository
         return List.of();
     }
+
+    public void approveBookingRequest(String approvalId, String conditions) {
+        // Implementation would fetch approval and update status
+    }
+
+    public void rejectBookingRequest(String approvalId, String reason) {
+        // Implementation would fetch approval and update status
+    }
 }

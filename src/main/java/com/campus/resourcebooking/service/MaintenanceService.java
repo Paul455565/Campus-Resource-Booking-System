@@ -27,12 +27,39 @@ public class MaintenanceService {
         return maintenance;
     }
 
+    public Maintenance scheduleMaintenance(String resourceId, LocalDateTime startDate,
+                                          LocalDateTime endDate, String description) {
+        Maintenance maintenance = Maintenance.scheduleMaintenance(
+            resourceId, startDate, endDate, description
+        );
+        return maintenance;
+    }
+
+    public Maintenance getMaintenanceById(String maintenanceId) {
+        // Implementation would query repository
+        throw new IllegalArgumentException("Maintenance not found: " + maintenanceId);
+    }
+
+    public List<Maintenance> getResourceMaintenance(String resourceId) {
+        // Implementation would query repository
+        return List.of();
+    }
+
+    public List<Maintenance> getPendingMaintenance() {
+        // Implementation would query repository
+        return List.of();
+    }
+
     public void startMaintenance(String maintenanceId) {
         // Retrieve and start maintenance
     }
 
-    public void completeMaintenance(String maintenanceId) {
+    public void completeMaintenance(String maintenanceId, String notes) {
         // Retrieve and complete maintenance
+    }
+
+    public void cancelMaintenance(String maintenanceId) {
+        // Retrieve and cancel maintenance
     }
 
     public List<Maintenance> getUpcomingMaintenance() {

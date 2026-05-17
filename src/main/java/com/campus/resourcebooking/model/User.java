@@ -111,6 +111,11 @@ public class User {
         return email != null && email.contains("@") && email.contains(".");
     }
 
+    public void deactivate() {
+        this.status = UserStatus.INACTIVE;
+        this.updatedAt = LocalDateTime.now();
+    }
+
     // Getters and setters
     public String getUserId() { return userId; }
     public String getEmail() { return email; }

@@ -6,6 +6,8 @@ import com.campus.resourcebooking.model.Approval;
 import com.campus.resourcebooking.enums.NotificationType;
 import com.campus.resourcebooking.enums.NotificationChannel;
 import com.campus.resourcebooking.enums.NotificationStatus;
+import com.campus.resourcebooking.enums.ApprovalDecision;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -70,5 +72,35 @@ public class NotificationService {
     public NotificationStatus getDeliveryStatus(String notificationId) {
         // Implementation would query repository
         return NotificationStatus.SENT;
+    }
+
+    public List<Notification> getUserNotifications(String userId, NotificationStatus status) {
+        // Implementation would query repository
+        return new ArrayList<>();
+    }
+
+    public int getUnreadCount(String userId) {
+        // Implementation would query repository
+        return 0;
+    }
+
+    public Notification getNotificationById(String notificationId) {
+        throw new IllegalArgumentException("Notification not found: " + notificationId);
+    }
+
+    public void markAsRead(String notificationId) {
+        // Implementation would update notification status
+    }
+
+    public void markAllAsRead(String userId) {
+        // Implementation would update all user notifications
+    }
+
+    public void deleteNotification(String notificationId) {
+        // Implementation would delete notification
+    }
+
+    public void deleteAllUserNotifications(String userId) {
+        // Implementation would delete all user notifications
     }
 }
